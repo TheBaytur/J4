@@ -1,0 +1,25 @@
+Index: src/getDaysForMonth.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/getDaysForMonth.java b/src/getDaysForMonth.java
+new file mode 100644
+--- /dev/null	(date 1700812564059)
++++ b/src/getDaysForMonth.java	(date 1700812564059)
+@@ -0,0 +1,15 @@
++import javax.management.monitor.StringMonitor;
++
++public class getDaysForMonth {
++
++    private static int getDaysForMonth(String month){
++        switch (month){
++            case "january":
++                return 31;
++            case "february":
++                return 28;
++            default:
++                throw new IllegalArgumentException("not recognized month " + month);
++        }
++    }
++}
